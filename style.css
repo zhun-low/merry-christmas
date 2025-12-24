@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #0b1d3a, #102a44);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* CANVAS DA NEVE */
+#snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* CONTEÚDO */
+.container {
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 24px;
+    gap: 16px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 12px;
+}
+
+#mensagem,
+.mensagem {
+    font-size: 1.35rem;
+    max-width: 720px;
+    line-height: 1.75;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+/* CORES SEM INLINE */
+.verde {
+    color: #7CFF7C;
+}
+
+.verde-escuro {
+    color: #2ecc71;
+}
+
+.vermelho {
+    color: #ff6b6b;
+}
+
+.amarelo {
+    color: #ffd369;
+}
+
+.destaque {
+    margin-top: 20px;
+    font-size: 1.45rem;
+    font-weight: 600;
+}
+
+.mensagem {
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+
+/* GIF */
+.container img {
+    max-width: 100%;
+    height: auto;
+    margin: 16px 0;
+    border-radius: 12px;
+}
+
+/* ASSINATURA */
+.assinatura {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-top: 12px;
+}
+@media (max-width: 768px) {
+
+    .mensagem {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    .destaque {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .mensagem {
+        font-size: 1rem;
+    }
+
+    .destaque {
+        font-size: 1.15rem;
+    }
+}
